@@ -1,4 +1,26 @@
 -------------------------------------------------------------------------------
 Test set: testRunner.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 26.86 s -- in testRunner.TestRunner
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 45.33 s <<< FAILURE! -- in testRunner.TestRunner
+testRunner.TestRunner.runScenario["Verify user able to login with invaild credentials", "Verify  Login functionality"](1) -- Time elapsed: 38.46 s <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //input[@name='username'] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '4.11.0', revision: '040bc5406b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.17'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 121.0.6167.85, chrome: {chromedriverVersion: 121.0.6167.85 (3f98d690ad7e..., userDataDir: C:\Users\deerai1\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61062}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61062/devtoo..., se:cdpVersion: 121.0.6167.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7d31d210e513118a774b3cec2db70ffd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at stepDefination.Login.user_enter_username_as_Maps(Login.java:112)
+	at ✽.User enter username and password as Maps(file:///C:/Users/deerai1/eclipse-workspace/DataDrivernRelatedProject/src/test/resources/feature/Parallel.feature:20)
+
+testRunner.TestRunner.runScenario["Title of your scenario for failed", "Verify  Login functionality"](2) -- Time elapsed: 40.28 s <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at stepDefination.Login.user_launch_the_applicationfailed(Login.java:80)
+	at ✽.User launch the application and failed test(file:///C:/Users/deerai1/eclipse-workspace/DataDrivernRelatedProject/src/test/resources/feature/Parallel.feature:41)
+

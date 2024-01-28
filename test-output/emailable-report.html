@@ -9,55 +9,307 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">514</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,370</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">testRunner.TestRunner</td><td><a href="#m0">setUpClass</a></td><td rowspan="1">1706382543065</td><td rowspan="1">473</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">accessbilityTest.Flipkart</td><td><a href="#m0">flipkartTest</a></td><td rowspan="1">1706461866388</td><td rowspan="1">2311</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">testRunner.TestRunner#setUpClass</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>org.testng.TestRunner@1494b84d</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">io.cucumber.java.InvalidMethodException: You&apos;re not allowed to extend classes that define Step Definitions or hooks. class stepDefination.Login extends class stepDefination.Hooks
-	at io.cucumber.java.InvalidMethodException.createInvalidMethodException(InvalidMethodException.java:16)
-	at io.cucumber.java.MethodScanner.validateMethod(MethodScanner.java:87)
-	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:77)
-	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:69)
-	at io.cucumber.java.MethodScanner.scan(MethodScanner.java:33)
-	at io.cucumber.java.JavaBackend.lambda$loadGlue$2(JavaBackend.java:41)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.DistinctOps$1$2.accept(DistinctOps.java:174)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
-	at java.base/java.util.stream.ReferencePipeline$7$1.accept(ReferencePipeline.java:276)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
-	at io.cucumber.core.runner.Runner.&lt;init&gt;(Runner.java:56)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.createRunner(ThreadLocalRunnerSupplier.java:47)
-	at java.base/java.lang.ThreadLocal$SuppliedThreadLocal.initialValue(ThreadLocal.java:305)
-	at java.base/java.lang.ThreadLocal.setInitialValue(ThreadLocal.java:195)
-	at java.base/java.lang.ThreadLocal.get(ThreadLocal.java:172)
-	at io.cucumber.core.runtime.ThreadLocalRunnerSupplier.get(ThreadLocalRunnerSupplier.java:40)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
-	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:141)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:93)
-	at io.cucumber.testng.TestNGCucumberRunner.&lt;init&gt;(TestNGCucumberRunner.java:124)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
+<h2>Default test</h2><h3 id="m0">accessbilityTest.Flipkart#flipkartTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Found 9 accessibility violations:
+1) Elements must have sufficient color contrast: https://dequeuniversity.com/rules/axe/3.5/color-contrast?application=axeAPI
+  a) [&quot;.css-901oao&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.2 (foreground color: #878787, background color: #f1f2f4, font size: 10.5pt (14px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  b) [&quot;._1o2Zk0 &gt; div&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  c) [&quot;h1&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  d) [&quot;h2:nth-child(6)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  e) [&quot;h2:nth-child(16)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  f) [&quot;h2:nth-child(19)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  g) [&quot;h2:nth-child(22)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  h) [&quot;h2:nth-child(25)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  i) [&quot;h2:nth-child(26)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  j) [&quot;b:nth-child(27)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  k) [&quot;h2:nth-child(30)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  l) [&quot;b:nth-child(31)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  m) [&quot;h2:nth-child(40)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  n) [&quot;b:nth-child(41)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  o) [&quot;._1o2Zk0 &gt; div &gt; a&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.97 (foreground color: #2874f0, background color: #f5f5f5, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  p) [&quot;h2:nth-child(47)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  q) [&quot;h2:nth-child(50)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  r) [&quot;b:nth-child(51)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  s) [&quot;h2:nth-child(54)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  t) [&quot;b:nth-child(55)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  u) [&quot;b:nth-child(56)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  v) [&quot;h2:nth-child(61)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  w) [&quot;h2:nth-child(64)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  x) [&quot;h2:nth-child(67)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 10.5pt (14px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  y) [&quot;b:nth-child(68)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  z) [&quot;b:nth-child(69)&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.29 (foreground color: #878787, background color: #f5f5f5, font size: 9.0pt (12px), font weight: bold). Expected contrast ratio of 4.5:1
+
+
+  aa) [&quot;div:nth-child(1) &gt; ._3I5N7v&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 4.48 (foreground color: #878787, background color: #212121, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ab) [&quot;div:nth-child(2) &gt; ._3I5N7v&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 4.48 (foreground color: #878787, background color: #212121, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ac) [&quot;div:nth-child(3) &gt; ._3I5N7v&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 4.48 (foreground color: #878787, background color: #212121, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ad) [&quot;div:nth-child(4) &gt; ._3I5N7v&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 4.48 (foreground color: #878787, background color: #212121, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ae) [&quot;.btl4ck &gt; ._3I5N7v&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 4.48 (foreground color: #878787, background color: #212121, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  af) [&quot;.MkhHNl:nth-child(6) &gt; ._3I5N7v&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 4.48 (foreground color: #878787, background color: #212121, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+  ag) [&quot;a[href=\&quot;tel\\:044-45614700\&quot;]&quot;]
+    Fix any of the following:
+      Element has insufficient color contrast of 3.71 (foreground color: #2874f0, background color: #212121, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1
+
+
+2) id attribute value must be unique: https://dequeuniversity.com/rules/axe/3.5/duplicate-id?application=axeAPI
+  a) [&quot;._8S67Ib[data-clone=\&quot;true\&quot;]:nth-child(1)&quot;]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+  b) [&quot;._8S67Ib[data-clone=\&quot;false\&quot;]:nth-child(2)&quot;]
+    Fix any of the following:
+      Document has multiple static elements with the same id attribute
+
+
+3) Alternative text of images should not be repeated as text: https://dequeuniversity.com/rules/axe/3.5/image-redundant-alt?application=axeAPI
+  a) [&quot;.L_FVxe&quot;]
+    Fix all of the following:
+      Element contains &lt;img&gt; element with alt text that duplicates existing text
+
+
+  b) [&quot;img[alt=\&quot;Grocery\&quot;]&quot;]
+    Fix all of the following:
+      Element contains &lt;img&gt; element with alt text that duplicates existing text
+
+
+  c) [&quot;img[alt=\&quot;Mobiles\&quot;]&quot;]
+    Fix all of the following:
+      Element contains &lt;img&gt; element with alt text that duplicates existing text
+
+
+  d) [&quot;img[alt=\&quot;Appliances\&quot;]&quot;]
+    Fix all of the following:
+      Element contains &lt;img&gt; element with alt text that duplicates existing text
+
+
+  e) [&quot;img[alt=\&quot;Travel\&quot;]&quot;]
+    Fix all of the following:
+      Element contains &lt;img&gt; element with alt text that duplicates existing text
+
+
+4) Form elements should have a visible label: https://dequeuniversity.com/rules/axe/3.5/label-title-only?application=axeAPI
+  a) [&quot;.Pke_EE&quot;]
+    Fix all of the following:
+      Only title used to generate label for form element
+
+
+5) Document must not have more than one contentinfo landmark: https://dequeuniversity.com/rules/axe/3.5/landmark-no-duplicate-contentinfo?application=axeAPI
+  a) [&quot;.TKplD7&quot;]
+    Fix any of the following:
+      Document has more than one contentinfo landmark
+
+
+6) Document must have one main landmark: https://dequeuniversity.com/rules/axe/3.5/landmark-one-main?application=axeAPI
+  a) [&quot;html&quot;]
+    Fix all of the following:
+      Document does not have a main landmark
+
+
+7) Ensures landmarks are unique: https://dequeuniversity.com/rules/axe/3.5/landmark-unique?application=axeAPI
+  a) [&quot;.TKplD7&quot;]
+    Fix any of the following:
+      The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable
+
+
+8) Zooming and scaling must not be disabled: https://dequeuniversity.com/rules/axe/3.5/meta-viewport?application=axeAPI
+  a) [&quot;meta[name=\&quot;viewport\&quot;]&quot;]
+    Fix any of the following:
+      user-scalable=no on &lt;meta&gt; tag disables zooming on mobile devices
+
+
+9) All page content must be contained by landmarks: https://dequeuniversity.com/rules/axe/3.5/region?application=axeAPI
+  a) [&quot;._2y8Yzt._2UnIQ_._3ak8Rd:nth-child(1)&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  b) [&quot;._3bzdSa&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  c) [&quot;._1kAmyc &gt; div &gt; .r-14lw9ot.r-eqz5dr.r-13awgt0 &gt; div &gt; div &gt; ._1i2djt0._3n8fnamv._3n8fnaf9 &gt; ._3n8fnamv._3n8fnaf9._3n8fna1&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  d) [&quot;._1kAmyc &gt; div &gt; .r-14lw9ot.r-eqz5dr.r-13awgt0 &gt; div &gt; div &gt; ._1i2djt0._3n8fnamv._3n8fnaf9 &gt; div &gt; .css-1dbjc4n &gt; ._3MlEpv &gt; .tLbyDf&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  e) [&quot;._2y8Yzt._2UnIQ_._3ak8Rd:nth-child(5) &gt; div &gt; .r-14lw9ot.r-eqz5dr.r-13awgt0 &gt; div &gt; div &gt; ._1i2djt0._3n8fnamv._3n8fnaf9 &gt; ._3n8fnamv._3n8fnaf9._3n8fna1&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  f) [&quot;._2y8Yzt._2UnIQ_._3ak8Rd:nth-child(5) &gt; div &gt; .r-14lw9ot.r-eqz5dr.r-13awgt0 &gt; div &gt; div &gt; ._1i2djt0._3n8fnamv._3n8fnaf9 &gt; div &gt; .css-1dbjc4n &gt; ._3MlEpv &gt; .tLbyDf&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  g) [&quot;._1zHMUC&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  h) [&quot;.r-1ljj7th&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+
+  i) [&quot;.r-1iqfa7g.r-60vfwk.r-13awgt0 &gt; div:nth-child(2)&quot;]
+    Fix any of the following:
+      Some page content is not contained by landmarks
+
+ expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at accessbilityTest.Flipkart.flipkartTest(Flipkart.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:390)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:325)
-	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at org.testng.TestRunner.privateRun(TestRunner.java:848)
 	at org.testng.TestRunner.run(TestRunner.java:621)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)

@@ -8,7 +8,9 @@ import io.cucumber.testng.CucumberOptions;
     features = "src/test/resources/feature", // Specify the path to your feature files
     glue = "stepDefination",      // Specify the package for your step definitions
    // tags = "@smoke",                           // Specify tags to include/exclude scenarios
-    plugin = {"pretty", "html:target/cucumber-reports"} // Specify plugins for reporting
+    plugin = {"pretty", "html:target/cucumber-reports","json:target/cucumber.json","rerun:target/failedrerun.txt"}
+   // plugin = {"json:target/cucumber-reports/cucumber.json", "html:target/cucumber-reports"}
+// Specify plugins for reporting
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
    

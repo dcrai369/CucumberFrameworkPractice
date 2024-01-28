@@ -35,3 +35,7 @@ Feature: Verify  Login functionality
     
     And User click on login button
     Then User verify Page title
+    
+    @tag2
+  Scenario: Title of your scenario for failed
+    Given User launch the application and failed test

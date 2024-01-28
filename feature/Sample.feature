@@ -1,7 +1,7 @@
 Feature: Verify  Login functionality
 
   @tag1
-  Scenario: Title of your scenario
+  Scenario: Title of your scenario vaild user
     Given User launch the application
     When User enter username and password
     |deepak |admin123|
@@ -14,13 +14,17 @@ Feature: Verify  Login functionality
     And User click on login button
     Then User verify Page title
  
- @tag1
-  Scenario: Title of your scenario
+ @tag2
+  Scenario: Title of your scenario invaild user
     Given User launch the application
      When User enter username and password as Maps
     |usernameCol|passwordCol|
     |deepak |admin123|
     |deepak2 |admin123|
-    
-    And User click on login button
+     And User click on login button
     Then User verify Page title
+    
+     @tag2
+  Scenario: Title of your scenario for failed
+    Given User launch the application and failed test
+    
